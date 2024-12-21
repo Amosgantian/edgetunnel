@@ -1,5 +1,5 @@
 icook.tw:2053# best domain
-cloudflare.cfgo.cc# best domain
+time.is# best domain
 cfip.xxxxxxxx.tk:8443# best domain
 steamdb.info# best domain
 japan.com# best domain 
@@ -15,3 +15,13 @@ russia.com# best domain
 www.4chan.org# best domain 
 www.digitalocean.com# best domain
 104.17.152.41# best domain
+cf.090227.xyz:443# best domain
+www.visa.com.sg:443# best domain
+www.csgo.com# best domain
+www.glassdoor.com# best domain
+skk.moe# best domain
+www.wto.org:8443# best domain
+icook.hk# best domain
+www.visaeurope.ch:2083# best domain
+www.visa.com.br:2087# best domain
+www.visasoutheasteurope.com:2096# best domain
