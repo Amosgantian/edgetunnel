@@ -1,27 +1,38 @@
-icook.tw:2053# best domain
-time.is# best domain
-cfip.xxxxxxxx.tk:8443# best domain
-steamdb.info# best domain
-japan.com# best domain 
-www.hugedomains.com# best domain 
-malaysia.com# best domain
-www.visa.co.jp# best domain 
-www.ipget.net# best domain 
-www.gov.ua# best domain 
-www.udacity.com# best domain 
-www.shopify.com# best domain 
-www.visakorea.com# best domain
-russia.com# best domain 
-www.4chan.org# best domain 
-www.digitalocean.com# best domain
-104.17.152.41# best domain
-cf.090227.xyz:443# best domain
-www.visa.com.sg:443# best domain
-www.csgo.com# best domain
-www.glassdoor.com# best domain
-skk.moe# best domain
-www.wto.org:8443# best domain
-icook.hk# best domain
-www.visaeurope.ch:2083# best domain
-www.visa.com.br:2087# best domain
-www.visasoutheasteurope.com:2096# best domain
+icook.tw:2053#1best domain
+time.is#2best domain
+cfip.xxxxxxxx.tk:8443#3best domain
+steamdb.info#4best domain
+japan.com#5best domain 
+www.hugedomains.com#6best domain 
+malaysia.com#7best domain
+www.visa.co.jp#8best domain 
+www.ipget.net#9best domain 
+www.gov.ua#10best domain 
+www.udacity.com#11best domain 
+www.shopify.com#12best domain 
+www.visakorea.com#13best domain
+russia.com#14best domain 
+www.4chan.org#15best domain 
+www.digitalocean.com#16best domain
+104.17.152.41#17best domain
+cf.090227.xyz:443#18best domain
+www.visa.com.sg:443#19best domain
+www.csgo.com#20best domain
+www.glassdoor.com#21best domain
+skk.moe#22best domain
+www.wto.org:8443#23best domain
+icook.hk#24best domain
+www.visaeurope.ch:2083#25best domain
+www.visa.com.br:2087#26best domain
+www.visasoutheasteurope.com:2096#27best domain
+usa.visa.com:443#28best domain
+myanmar.visa.com:8443#29best domain
+www.visa.com.tw:2053#30best domain
+www.visaeurope.ch:2083#31best domain
+www.visa.com.br:2087#32best domain
+www.visasoutheasteurope.com:2096#33best domain
+
+
+
+
+
