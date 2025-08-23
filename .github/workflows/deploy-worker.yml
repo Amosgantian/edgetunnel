@@ -5,18 +5,18 @@ on:
     branches:
       - main
       - dev
-  workflow_dispatch:  # 手动触发部署
+  workflow_dispatch:  # 手动触发
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout
+      # 1️⃣ Checkout 代码
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # 2️⃣ Set Deployment Environment
+      # 2️⃣ 设置环境（生产/预览）
       - name: Set Deployment Environment
         id: set-env
         run: |
@@ -25,20 +25,19 @@ jobs:
           else
             echo "env=preview" >> $GITHUB_OUTPUT
           fi
-
-      # 3️⃣ Install Wrangler
+          
+      # 3️⃣ 安装 Wrangler
       - name: Install Wrangler
         run: npm install -g wrangler
 
-      # 4️⃣ Deploy Cloudflare Worker
+      # 4️⃣ 部署 Worker（保留 UI 变量、KV、域名）
       - name: Deploy Worker
         id: deploy-worker
         env:
-          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: |
           echo "Deploying Worker to environment: ${{ steps.set-env.outputs.env }}"
-          wrangler deploy --env ${{ steps.set-env.outputs.env }} || exit 1
-          echo "worker_success=true" >> $GITHUB_OUTPUT
+          wrangler deploy --env ${{ steps.set-env.outputs.env }} --keep-vars || exit 1
 
       # 5️⃣ GitHub Summary
       - name: Add Deployment Info to GitHub Summary
@@ -50,7 +49,7 @@ jobs:
           echo "**Commit:** ${{ github.event.head_commit.message }}" >> $GITHUB_STEP_SUMMARY
           echo "**Worker:** Deployed via Wrangler" >> $GITHUB_STEP_SUMMARY
 
-      # 6️⃣ Telegram Notification (success)
+      # 6️⃣ Telegram Notification (成功)
       - name: Telegram Notification (success)
         if: success()
         run: |
@@ -59,7 +58,7 @@ jobs:
           -d text="✅ *Worker Deployment Successful*\n*Repo:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n*Commit:* ${{ github.event.head_commit.message }}" \
           -d parse_mode="Markdown"
 
-      # 7️⃣ Telegram Notification (failure)
+      # 7️⃣ Telegram Notification (失败)
       - name: Telegram Notification (failure)
         if: failure()
         run: |
