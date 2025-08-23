@@ -1,4 +1,5 @@
-name = "amossselvsufobtro.htbiology.workers.dev"
+name = "amossselvsufobtro"
 main = "_worker.js"
 compatibility_date = "2025-08-23"
 type = "javascript"
+
