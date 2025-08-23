@@ -2,4 +2,14 @@ name = "amossselvsufobtro"
 main = "_worker.js"
 compatibility_date = "2025-08-23"
 type = "javascript"
+# 生产环境
+[env.production]
+# 如果使用 workers.dev 子域名，可以不写 route/zone_id
+# route = "https://your-production-domain/*"
+# zone_id = "your-production-zone-id"
+
+# 预览环境
+[env.preview]
+# route = "https://your-preview-domain/*"
+# zone_id = "your-preview-zone-id"
 
