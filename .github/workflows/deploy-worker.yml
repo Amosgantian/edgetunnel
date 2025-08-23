@@ -1,4 +1,4 @@
-name: Deploy Cloudflare Worker(agtCF)
+name: Deploy Cloudflare Worker(agtCF_workers)
 
 on:
   push:
