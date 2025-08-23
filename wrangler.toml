@@ -1,5 +1,6 @@
 name = "my-worker"
-main = "_worker.js"
+main = "dist/_worker.js"
 compatibility_date = "2025-08-07"
 account_id = "abc74dc4a76cbb86d199165912591542"
+
 
