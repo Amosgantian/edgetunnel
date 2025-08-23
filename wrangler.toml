@@ -1,4 +1,5 @@
-name = "amossselvsufobtro"
+name = "my-worker"
 main = "_worker.js"
 compatibility_date = "2025-08-07"
 account_id = "abc74dc4a76cbb86d199165912591542"
+
