@@ -2,14 +2,23 @@ name = "amossselvsufobtro"
 main = "_worker.js"
 compatibility_date = "2025-08-23"
 type = "javascript"
+
+# -------------------------------
 # 生产环境
 [env.production]
-# 如果使用 workers.dev 子域名，可以不写 route/zone_id
 # route = "https://your-production-domain/*"
 # zone_id = "your-production-zone-id"
 
+[[env.production.kv_namespaces]]
+binding = "KV"            # Worker 内访问 KV 的名字
+id = "e40ea51dbb9b45b696acf096162702df"  # KV namespace ID，从 UI 获取
+
+# -------------------------------
 # 预览环境
 [env.preview]
-# route = "https://your-preview-domain/*"
+# route = "https://dev.example.com/*"
 # zone_id = "your-preview-zone-id"
 
+[[env.preview.kv_namespaces]]
+binding = "KV"
+id = "e40ea51dbb9b45b696acf096162702df"
